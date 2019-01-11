@@ -1,0 +1,185 @@
+/*Genral*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, cursive;
+    background-color: #a9d7d1;
+/*    opacity: .9;*/
+}
+
+div.container {
+    justify-content: center;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+input:invalid+span:after {
+    content: '✖';
+    padding-left: 5px;
+    color: red
+}
+
+input:valid+span:after {
+    content: '✓';
+    padding-left: 5px;
+    color: green;
+}
+
+.clearfix {clear: both;}
+/*General*/
+
+/*Start Header*/
+header {
+    margin: 20px 0;
+    color: #000;
+}
+/*./Header*/
+
+/*Start Form*/
+article {
+    background-color: #FFF;
+    color: #333;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+article p {
+    margin: 20px 0;
+    opacity: .9;
+}
+
+form {
+    overflow: hidden;
+}
+
+form section {
+    margin: 20px 0;
+}
+
+.left-tab {
+    width: 48%;
+    float: left;
+    text-align: right;
+    padding-top: 5px;
+    font-size: 16px;
+    opacity: .9;
+    margin-top: 5px;
+}
+
+.right-tab {
+    width: 50%;
+    float: right;
+    text-align: left;
+}
+
+.text-input input {
+    padding: 10px 8px;
+    width: 250px;
+    height: 10px;
+    border-radius: 3px;
+    border: 1px solid #DDD;
+}
+
+/*dropdown*/
+select {
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+}
+
+
+/*likely - radio button*/
+.radioButton div ul {
+    list-style: none;
+}
+
+.radioButton div ul li {
+    margin: 10px 0;
+    position: relative;
+}
+
+.radioButton ul li label {
+    margin: 10px;
+}
+
+.radioButton ul li label input {
+    width: auto;
+    float: left;
+    padding: 10px;
+}
+
+
+/*check-list*/
+.check-list .right-tab ul {
+    list-style: none;
+}
+
+.check-list ul li {
+    margin-bottom: 10px;
+}
+
+.check-list ul li label {
+    margin: 10px;
+}
+
+.check-list ul li label input {
+    float: left;
+}
+
+/*message*/
+.message .right-tab textarea {
+    width: 300px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+/*Button*/
+.button {
+    margin: 20px;
+}
+
+.button button {
+    padding: 10px 25px;
+    color: #FFF;
+    border: 1px solid #DDD;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    font-size: 17px;
+    opacity: .8;
+}
+
+/*./Form*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

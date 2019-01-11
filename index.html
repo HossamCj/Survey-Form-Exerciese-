@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+        <link href="css/app.css" rel="stylesheet">
+        
+<!--        <link href="css/debug.css" rel="stylesheet">-->
+    </head>
+    <body>
+        
+        <div class="container">
+            <!--        title   -->
+            <header>
+                <h1 id="title">Survy Form</h1>
+            </header>
+
+    <!--        form    -->
+            <article>
+    <!--        Short descrioption of the form -->
+                <p id="description">Let us know how we can improve freeCodeCamp</p>
+
+                <section>
+                <!-- form -->
+                    <form id="survey-form" method="get">
+                        <div class="text-input">
+                            <!--    Name    -->
+                            <section>
+                                <div class="left-tab">
+                                    <label id="name-label">&#42; Name&#58; </label>
+                                </div>
+                                <div class="right-tab">
+                                    <input type="text" id="name" placeholder="Enter your name" required>
+                                    <span class="validity"></span>
+                                </div>
+                            </section>
+
+                            <div class="clearfix"></div>
+
+                            <!-- Email -->
+                            <section>
+                                <div class="left-tab">
+                                    <label id="email-label">&#42; Email&#58; </label>
+                                </div>
+                                <div class="right-tab">
+                                    <input type="email" id="email" placeholder="Enter your email" required formnovalidate>
+                                    <span class="validity"></span>
+                                </div>
+                            </section>
+
+                            <div class="clearfix"></div>
+
+                            <!-- Age -->
+                            <section>
+                                <div class="left-tab">
+                                    <label id="number-label">&#42; Age&#58; </label>
+                                </div>
+                                <div class="right-tab">
+                                    <input type="number" id="number" max="70" min="16" placeholder="Enter your age" formnovalidate required>
+                                    <span class="validity"></span>
+                                </div>
+                            </section>
+                        </div>
+                        
+                        <div class="clearfix"></div>
+
+                        <!-- Currny role -->
+                        <section>
+                            <div class="left-tab">
+                                <labe for="dropdown">Which option best describes your current role&#63;</labe>
+                            </div>
+                            <div class="right-tab">
+                                <select id="dropdown">
+                                    <option disabled selected>Select an option</option>
+                                    <option value="student">Student</option>
+                                    <option value="fullTimeJob">Full Time Job</option>
+                                    <option value="fullTimeLearner">Full Time Learner</option>
+                                    <option value="notToSay">Prefer Not To Say</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </section>
+                        
+                        <div class="clearfix"></div>
+
+                    <!-- likely - radio button -->
+                        <section class="radioButton">
+                            <div class="left-tab">
+                                <label>How likely is that you would recommend freeCodeCamp to a friend&#63;</label>
+                            </div>
+                            <div class="right-tab">
+                                <ul>
+                                    <li>
+                                        <label>
+                                            Definitely
+                                            <input name="radio-buttons" value="Definitely" type="radio" >
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            Maybe
+                                            <input name="radio-buttons" value="Maybe" type="radio">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            Not sure
+                                            <input name="radio-buttons" value="Not-sure" type="radio">
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        
+                        <div class="clearfix"></div>
+                        
+                        
+                        <!-- What do you like -->
+                        <section class="wdu-like">
+                            <div class="left-tab">
+                                <label>What do you like most in FCC&#58;</label>
+                            </div>
+                            <div class="right-tab">
+                                <select>
+                                    <option disabled selected>Select an option</option>
+                                    <option value="challenges">Challnges</option>
+                                    <option value="projects">Projects</option>
+                                    <option value="community">Community</option>
+                                    <option value="open-source">Open Source</option>
+                                </select>
+                            </div>
+                        </section>
+                        
+                        <div class="clearfix"></div>
+
+                        
+                        <!-- check list -->
+                        <section class="check-list">
+                            <div class="left-tab">
+                                 <label>Things that should be improved in the future</label>
+                                <br>
+                                <label>&#40;Check all that apply&#41;&#58;</label>
+                            </div>
+                            <div class="right-tab">
+                                <ul>
+                                    <li>
+                                        <label>
+                                            Front-end Projects
+                                            <input name="prefer" type="checkbox" value="1">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            Back-end Projects
+                                            <input name="prefer" type="checkbox" value="2">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            Data Visualization
+                                            <input name="prefer" type="checkbox" value="3">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            Challenges
+                                            <input name="prefer" type="checkbox" value="4">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            Open Source Community
+                                            <input name="prefer" type="checkbox" value="5">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            Gitter help rooms
+                                            <input name="prefer" type="checkbox" value="6">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            Videos
+                                            <input name="prefer" type="checkbox" value="7">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            City Meetups
+                                            <input name="prefer" type="checkbox" value="8">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            Wiki
+                                            <input name="prefer" type="checkbox" value="9">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            Forum
+                                            <input name="prefer" type="checkbox" value="10">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            Additional Courses
+                                            <input name="prefer" type="checkbox" value="11">
+                                        </label>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </section>
+                        
+                        <div class="clearfix"></div>
+                    
+
+                        <!-- Message -->
+                        <section class="message">
+                            <div class="left-tab">
+                                <labe>Any Comments or Suggestions&#63;</labe>
+                            </div>
+                            <div class="right-tab">
+                                <textarea id="comments" placeholder="Enter your comment or message here..."></textarea>
+                            </div>
+                        </section>
+                        
+                        <div class="clearfix"></div>
+
+
+                        <section class="button">
+                            <button id="submit" type="submit">Submit</button>
+                        </section>
+                    </form>
+                </section>
+
+            </article>
+        </div>
+        
+        
+        <script src="javaScript/app.js"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
